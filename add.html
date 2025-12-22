@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Payment</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>➕ Add Payment</h1>
+</header>
+
+<main>
+<form id="payment-form" class="card">
+    <label for="name">Payment Name</label>
+    <input type="text" id="name" placeholder="e.g., Rent, EMI" required>
+
+    <label for="amount">Amount (₹)</label>
+    <input type="number" id="amount" placeholder="0" required>
+
+    <label for="date">Date</label>
+    <input type="date" id="date" required>
+
+    <label for="category">Category</label>
+    <select id="category">
+        <option value="Rent">Rent</option>
+        <option value="EMI">EMI</option>
+        <option value="Internet">Internet</option>
+        <option value="Food">Food</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <button type="submit" class="btn gradient-btn">💾 Save Payment</button>
+</form>
+
+<div class="actions">
+    <a href="index.html" class="btn gradient-btn">⬅ Back Home</a>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
