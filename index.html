@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Payments Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>💰 Monthly Payments</h1>
+</header>
+
+<main>
+    <!-- Total Expense Card -->
+    <div class="card total-card">
+        <h2>Total This Month</h2>
+        <p id="total-amount">₹0</p>
+    </div>
+
+    <!-- Recent Payments -->
+    <div class="card payment-list">
+        <h2>Recent Payments</h2>
+        <ul id="payments"></ul>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="actions">
+        <a href="add.html" class="btn gradient-btn">➕ Add Payment</a>
+        <a href="report.html" class="btn gradient-btn">📊 Monthly Report</a>
+    </div>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
