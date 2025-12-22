@@ -1,0 +1,50 @@
+/* Global */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: 'Poppins', sans-serif; background:#f0f2f5; color:#333; }
+
+/* Header */
+header { 
+    background: linear-gradient(90deg,#4a90e2,#50e3c2); 
+    color:white; text-align:center; padding:25px 0; 
+    font-weight:600; font-size:1.8rem; letter-spacing:1px;
+}
+
+/* Card */
+.card {
+    background:white; margin:20px auto; padding:20px;
+    border-radius:15px; box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    width:90%; max-width:500px; animation:fadeIn 0.5s ease-in-out;
+}
+
+.card h2 { font-weight:600; color:#4a90e2; margin-bottom:10px; }
+.total-card p { font-size:2rem; font-weight:700; color:#50e3c2; text-align:center; }
+
+/* Payment list */
+.payment-list ul, .category-report ul { list-style:none; }
+.payment-list li, .category-report li { 
+    display:flex; justify-content:space-between; align-items:center; 
+    padding:12px 0; border-bottom:1px solid #eee; transition: transform 0.2s;
+}
+.payment-list li:hover, .category-report li:hover { transform:translateX(5px); }
+li span.category { background:#4a90e2; color:white; padding:4px 10px; border-radius:20px; font-size:0.8rem; }
+
+/* Buttons */
+.actions { text-align:center; margin:20px; }
+.btn { display:inline-block; text-decoration:none; padding:12px 25px; margin:10px; border-radius:25px; font-weight:600; transition:0.3s; }
+.gradient-btn { background:linear-gradient(90deg,#4a90e2,#50e3c2); color:white; }
+.gradient-btn:hover { transform:scale(1.05); box-shadow:0 6px 12px rgba(0,0,0,0.2); }
+
+/* Form Inputs */
+form input, form select, form button { width:100%; margin:10px 0; padding:10px; border-radius:8px; border:1px solid #ccc; box-sizing:border-box; }
+form button { background:#4caf50; color:white; border:none; cursor:pointer; }
+form button:hover { background:#388e3c; }
+
+/* Animations */
+@keyframes fadeIn { from {opacity:0; transform:translateY(10px);} to {opacity:1; transform:translateY(0);} }
+
+/* Responsive */
+@media(max-width:600px){
+header { font-size:1.5rem; padding:20px 0; }
+.card { padding:15px; margin:15px; }
+.btn { width:80%; margin:10px auto; }
+}
