@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Monthly Payments Manager",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Payments",
+  "start_url": "/",
+  "theme_color": "#4a90e2",
+  "id": "Monthly Payments"
+}
